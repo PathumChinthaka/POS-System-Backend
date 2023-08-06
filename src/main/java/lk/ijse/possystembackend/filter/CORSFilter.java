@@ -12,7 +12,7 @@ public class CORSFilter extends HttpFilter {
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
         System.out.print("CORS Filter: ");
         String origin = req.getHeader("Origin");
-        if (origin.contains("http://localhost")) {
+        if (origin.contains("http://127.0.0.1:5501")) {
             System.out.println("OK");
             res.setHeader("Access-Control-Allow-Origin", origin);
             res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,HEADER");
