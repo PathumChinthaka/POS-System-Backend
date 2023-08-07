@@ -39,6 +39,7 @@ public class CustomerServlet extends HttpServlet {
             try {
                 CustomerDTO customerDTO = jsonb.fromJson(req.getReader(), CustomerDTO.class);
                 validate(customerDTO);
+                System.out.println(customerDTO);
                 boolean save=customerService.saveData(customerDTO);
                 if (save){
                     resp.setStatus(HttpServletResponse.SC_ACCEPTED);

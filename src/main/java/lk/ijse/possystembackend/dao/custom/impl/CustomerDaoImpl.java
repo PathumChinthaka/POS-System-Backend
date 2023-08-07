@@ -1,28 +1,31 @@
 package lk.ijse.possystembackend.dao.custom.impl;
 
 import lk.ijse.possystembackend.dao.CrudDAO;
+import lk.ijse.possystembackend.dao.custom.CustomerDAO;
+import lk.ijse.possystembackend.entity.Customer;
 import lk.ijse.possystembackend.entity.SuperEntity;
 import org.hibernate.Session;
 
-public class CustomerDaoImpl implements CrudDAO {
+public class CustomerDaoImpl implements CustomerDAO {
 
     @Override
-    public boolean saveData(SuperEntity entity, Session session) {
+    public boolean saveData(Customer entity, Session session) {
+        session.save(entity);
+        return true;
+    }
+
+    @Override
+    public boolean updateData(Customer entity, Session session) {
         return false;
     }
 
     @Override
-    public boolean updateData(SuperEntity entity, Session session) {
-        return false;
-    }
-
-    @Override
-    public SuperEntity showData(SuperEntity entity, Session session) {
+    public Customer showData(Customer entity, Session session) {
         return null;
     }
 
     @Override
-    public boolean deleteData(SuperEntity entity, Session session) {
+    public boolean deleteData(Customer entity, Session session) {
         return false;
     }
 }
