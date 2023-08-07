@@ -14,7 +14,7 @@ import java.util.List;
 @Data
 @ToString
 @Entity
-public class Customer {
+public class Customer implements SuperEntity {
     @Id
     private String cusId;
     private String cusName;
@@ -22,6 +22,7 @@ public class Customer {
     private int nic;
     private String email;
     private int contact;
+
 
 //    @OneToMany(targetEntity = Order.class,mappedBy = "customer",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
 //    @ToString.Exclude

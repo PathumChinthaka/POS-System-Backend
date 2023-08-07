@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Pos-System-Backend" target="1.8" />
+      <module name="Pos-System-Backend" target="9" />
       <module name="Pos-System-Frontend" target="1.8" />
     </bytecodeTargetLevel>
   </component>
