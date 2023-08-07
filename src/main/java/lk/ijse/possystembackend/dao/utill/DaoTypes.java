@@ -1,4 +1,4 @@
-package lk.ijse.possystembackend.dao.custom.utill;
+package lk.ijse.possystembackend.dao.utill;
 
 public enum DaoTypes {
     CUSTOMER_DAO,
