@@ -1,7 +1,7 @@
 package lk.ijse.possystembackend.service;
 
 import lk.ijse.possystembackend.service.custom.impl.CustomerServiceImpl;
-import lk.ijse.possystembackend.service.custom.utill.ServiceTypes;
+import lk.ijse.possystembackend.service.utill.ServiceTypes;
 
 public class ServiceFactory {
     private static ServiceFactory serviceFactory;

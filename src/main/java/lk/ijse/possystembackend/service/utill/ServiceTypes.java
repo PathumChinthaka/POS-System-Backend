@@ -1,4 +1,4 @@
-package lk.ijse.possystembackend.service.custom.utill;
+package lk.ijse.possystembackend.service.utill;
 
 public enum ServiceTypes {
     CUSTOMER_SERVICE,

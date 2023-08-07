@@ -1,5 +1,8 @@
 package lk.ijse.possystembackend.service.custom;
 
-public interface CustomerService {
+import lk.ijse.possystembackend.dto.CustomerDTO;
+import lk.ijse.possystembackend.service.SuperService;
+
+public interface CustomerService extends SuperService<CustomerDTO> {
 
 }
